@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+/*<uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+/*/
+* {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #601cfc;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.name {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding-left: 30px;
+
+}
+
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imgs/view-airliner-wing-from-window.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+
+
+
+}
+
+.main h2 span {
+    color: white;
+    font-size: 2.9em;
+    font-weight: 800;
+
+}
+
+.main h3 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+
+    margin-bottom: 30px;
+
+
+}
+
+.main-btn {
+    color: white;
+    background-color: #601cfc;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+
+}
+
+.main-btn:hover {
+    background-color: #5912ff;
+    transform: scale(1.1);
+
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.8em;
+    padding-right: 30px;
+}
+
+.main .social-icons a {
+    padding-right: 18px;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #601cfc;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background-color: white;
+    width: 21.25em;
+
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.1);
+
+}
+
+.card .icon {
+    color: #5912ff;
+    font-size: 7.8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #5912ff;
+    font-size: 1.2em;
+    font-weight: 700px;
+    margin: 10px;
+}
+
+.offers {
+    background-color: #1a1b1d;
+}
+
+.offer-title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.offers .content {
+    margin-top: 30px;
+}
+
+.offer-card {
+    background-color: #fff;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: .07s ease;
+}
+
+.offer-card:hover {
+    transform: scale(1.1);
+
+}
+
+.offer-card:hover .offerimage {
+    opacity: 95%;
+
+
+}
+
+.offer-card img {
+    width: 100%;
+}
+
+.offer-info {
+    padding: 1em;
+}
+
+.offer-category {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.offer-price {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.more {
+    text-decoration: none;
+    color: #5912ff;
+    font-size: 1.2em;
+
+}
+
+.more :hover {
+    color: #a179ff;
+}
+
+.contact .icon {
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: black;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #1a1b1d;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.copyright span {
+    color: #a781ff;
+    font-weight: 350;
+}
+
+.footer .social-icons a {
+    font-size: 1.5em;
+
+}
+
+/* RESPONSIVE */
+@media (max-width:900px) {
+    header {
+        /* progressing*/
+        position: fixed;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 80px;
+    }
+
+    .name {
+        /* progressing*/
+        font-size: 0.7em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+
+
+    .main h2 span {
+        font-size: 1.8em;
+    }
+
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+
+
+        padding: 1em;
+        font-size: 0.7em;
+
+    }
+
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+
+}
