@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+/*<uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000
+/*/
+* {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #601cfc;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.name {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding-left: 30px;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher button {
+    background-color: white;
+    color: #601cfc;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.language-switcher button:hover {
+    background-color: #5912ff;
+    color: white;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(imgs/view-airliner-wing-from-window.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    color: white;
+    font-size: 2.9em;
+    font-weight: 800;
+}
+
+.main h3 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: white;
+    background-color: #601cfc;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #5912ff;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.8em;
+    padding-right: 30px;
+}
+
+.main .social-icons a {
+    padding-right: 18px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #601cfc;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.card {
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: #5912ff;
+    font-size: 7.8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #5912ff;
+    font-size: 1.2em;
+    font-weight: 700px;
+    margin: 10px;
+}
+
+.detals {
+    color: #5912ff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 800;
+    transition: 0.5s ease;
+}
+
+.detals:hover {
+    color: #ff0000;
+    font-size: 1.2em;
+
+
+}
+
+.offers {
+    background-color: #1a1b1d;
+}
+
+.offer-title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.offers .content {
+    margin-top: 30px;
+}
+
+.offer-card {
+    background-color: #fff;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: .07s ease;
+}
+
+.offer-card:hover {
+    transform: scale(1.1);
+}
+
+.offer-card:hover .offerimage {
+    opacity: 95%;
+}
+
+.offer-card img {
+    width: 100%;
+}
+
+.offer-info {
+    padding: 1em;
+}
+
+.offer-category {
+    direction: rtl;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000;
+}
+
+.offer-price {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.more {
+    text-align: right;
+    text-decoration: none;
+    color: #5912ff;
+    font-size: 1.2em;
+}
+
+.more :hover {
+    color: #a179ff;
+}
+
+
+
+
+.contact .icon {
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: black;
+}
+
+.contact .info a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+.contact .info a:hover {
+    color: #5117d8;
+}
+
+.footer {
+    background-color: #1a1b1d;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.copyright span {
+    color: #a781ff;
+    font-weight: 350;
+}
+
+.footer .social-icons a {
+    font-size: 1.5em;
+}
+
+.last {
+    background-color: #1a1b1d;
+    color: #fff;
+    padding: 1em;
+    padding-top: 0em;
+    margin-top: 0%;
+
+
+}
+
+.logo {
+
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #a781ff;
+    font-weight: 350;
+
+}
+
+/* hoooooooooooooooootel*/
+.contact .card .mov {
+    width: 100%;
+
+}
+
+/* paaaaaaaayment*/
+.pay {
+    padding: 50px 100px;
+}
+
+.pay .card {
+    background-color: white;
+    width: 22.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    min-height: 14em;
+
+    overflow: hidden;
+}
+
+.pay .card:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.1);
+}
+
+.pay .content .card .icon {
+    width: 100%;
+    font-size: 4.5em;
+    text-align: center;
+
+}
+
+.pay .info {
+    text-align: center;
+    text-decoration: none;
+}
+
+.pay .info h3 {
+    color: #5912ff;
+    font-size: 1.2em;
+    font-weight: 700px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    header {
+        padding: 10px 80px;
+    }
+
+    .name {
+        font-size: 1.2em;
+    }
+
+    .nav a {
+        padding-left: 15px;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main h2 span {
+        font-size: 1.8em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pay .content .card {
+
+        padding: 15px;
+        margin: 5px;
+
+    }
+
+    .footer {
+        padding: 1em;
+        font-size: 0.7em;
+    }
+
+    .last {
+        padding: 1em;
+        font-size: 0.7em;
+    }
+
+    .language-switcher {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .language-switcher button {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* سسسسس*/
+/* General styles */
+* {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #601cfc;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    transition: padding 0.3s ease;
+}
+
+.name {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .name {
+        font-size: 1.2em;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #601cfc;
+        padding: 10px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav a {
+        font-size: 1em;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/**/
+/* General styles */
+* {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #601cfc;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    transition: padding 0.3s ease;
+}
+
+.name {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.language-selector {
+    position: relative;
+}
+
+.lang-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.lang-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #601cfc;
+    border: 1px solid white;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.lang-menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.lang-menu a:hover {
+    background-color: #5912ff;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .name {
+        font-size: 1.2em;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #601cfc;
+        padding: 10px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav a {
+        font-size: 1em;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .language-selector {
+        display: block;
+    }
+
+    .lang-menu {
+        position: static;
+        background-color: transparent;
+        border: none;
+    }
+
+    .lang-menu a {
+        padding: 10px;
+        color: white;
+        background-color: #601cfc;
+    }
+
+    .lang-menu a:hover {
+        background-color: #5912ff;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
